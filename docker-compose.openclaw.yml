@@ -1,0 +1,10 @@
+services:
+  ipv11-openclaw:
+    build:
+      context: .
+      dockerfile: Dockerfile.openclaw
+    image: ipv11-openclaw-demo:latest
+    container_name: ipv11-openclaw-demo
+    ports:
+      - "8011:8011"
+    restart: unless-stopped
